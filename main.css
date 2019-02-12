@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #222;
+  font-family: sans-serif;
+  color: #eee;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+
+.menu {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.menu__burger {
+  cursor: pointer;
+  display: block;
+}
+
+.burger__bar {
+  background-color: #eee;
+  display: block;
+  width: 100px;
+  height: 14px;
+  margin-bottom: 10px;
+  
+  position: relative;
+  top: 0;
+  
+  transition: all ease-in-out 0.4s;
+}
