@@ -22,7 +22,7 @@ body {
 .menu {
   position: relative;
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
 }
 
 .menu__burger {
@@ -41,4 +41,20 @@ body {
   top: 0;
   
   transition: all ease-in-out 0.4s;
+}
+
+.menu.menu--open .burger__bar--1 {
+  transform: rotate(-45deg);
+  top: 23px;
+}
+
+.menu.menu--open .burger__bar--2 {
+  width: 0;
+  opacity: 0;
+}
+
+
+.menu.menu--open .burger__bar--3 {
+  transform: rotate(45deg);
+  top: -23px;
 }
